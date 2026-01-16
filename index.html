@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Vatsal Parikh</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Added Google Fonts (Poppins) for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Vatsal Parikh</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Dark Mode Toggle -->
+            <li class="theme-switch-wrapper">
+                <i class="fas fa-moon" id="theme-toggle"></i>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content hidden">
+            <h1>Hello, I am <span class="highlight">Vatsal Parikh</span></h1>
+            <h2>Web Developer</h2>
+            <p>Building responsive and efficient web solutions.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container hidden">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                I am a passionate Web Developer with a strong interest in building scalable web applications. Currently pursuing my engineering degree, I focus on writing clean, efficient code and learning modern technologies to solve real-world problems.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-light">
+        <div class="container hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <h3>B.Tech in Computer Engineering</h3>
+                <span class="institution">Shah & Anchor Kutchhi Engineering College</span> <br>
+                <span>Mumbai University (Affiliated)</span>
+                <p class="grad-date">Expected Completion: <strong>2027</strong></p>
+                <p>Focusing on core computer science concepts, data structures, and full-stack software development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container hidden">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML5 & CSS3</div>
+                <div class="skill-item"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
+                <div class="skill-item"><i class="fab fa-react"></i> React.js</div>
+                <div class="skill-item"><i class="fab fa-node"></i> Node.js</div>
+                <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section bg-light">
+        <div class="container hidden">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                        <img src="img/c1.jpeg" alt="Certification 1" class="cert-img">
+                    </div>
+                    <div class="cert-content">
+                        <h3>C++</h3>
+                        <p>Pride Computer Education</p>
+                    </div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                        <img src="img/c2.jpg" alt="Certification 2" class="cert-img">
+                    </div>
+                    <div class="cert-content">
+                        <h3>JavaScript</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                        <img src="img/c3.jpg" alt="Certification 3" class="cert-img">
+                    </div>
+                    <div class="cert-content">
+                        <h3>React Js</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                        <img src="img/c4.jpg" alt="Certification 4" class="cert-img">
+                    </div>
+                    <div class="cert-content">
+                        <h3>AI Fundamentals</h3>
+                        <p>IBM</p>
+                    </div>
+                </div>
+                <!-- Cert 5 -->
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                        <img src="img/c5.jpg" alt="Certification 5" class="cert-img">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Modern AI</h3>
+                        <p>Cisco</p>
+                    </div>
+                </div>
+                <!-- Cert 6 -->
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                        <img src="img/c6.jpg" alt="Certification 6" class="cert-img">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Blockchain Bootcamp</h3>
+                        <p>Code Eater</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="certModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModal">
+        <div id="caption"></div>
+    </div>
+
+    <section id="projects" class="section">
+        <div class="container hidden">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A professional portfolio built to showcase technical expertise and academic achievements.</p>
+                    <a href="#" class="project-link">View Code <i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+                <div class="project-card">
+                    <h3>Fake Job Detection</h3>
+                    <p>An AI-driven job scam detection platform with risk analysis, URL verification, and downloadable reports.</p>
+                    <a href="https://fake-job-detector-theta.vercel.app/" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title 3</h3>
+                    <p>An innovative solution demonstrating advanced problem-solving and coding skills.</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container hidden">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:vatsaljparikh@gmail.com">vatsaljparikh@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/vatsal-p-7748a613b/">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/workwith-vatsal">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Vatsal Parikh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
